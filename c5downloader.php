@@ -6,10 +6,10 @@
  * コピーライト以外の改変、再配布OK。個人利用の範囲で勝手に使ってOKです。
  * その代わり当方では一切責任を負いません。
  */
-define("SRC_URL","http://www.concrete5.org/download_file/-/view/71260/");
-define("VERSION","Ver.5.7.0.3");
-define("FILENAME","./concrete5.5.7.0.3.zip");
-define("DIRNAME","./concrete5.7.0.3");
+define("SRC_URL","http://www.concrete5.org/download_file/-/view/71439/");
+define("VERSION","Ver.5.7.0.4");
+define("FILENAME","./concrete5.5.7.0.4.zip");
+define("DIRNAME","./concrete5.7.0.4");
 
 if(isset($_GET["step"])){
     switch($_GET["step"]){
