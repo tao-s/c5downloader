@@ -144,7 +144,7 @@ function sendRequest(stepNum){
 }
 function gotoInstallPage(){
     if(!alert("インストール画面にジャンプします。\nこのファイルは必ず削除してください。")){
-        location("./index.php");
+        location.href="./index.php";
     }
 }
 </script>
