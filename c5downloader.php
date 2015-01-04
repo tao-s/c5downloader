@@ -6,10 +6,10 @@
  * コピーライト以外の改変、再配布OK。個人利用の範囲で勝手に使ってOKです。
  * その代わり当方では一切責任を負いません。
  */
-define("SRC_URL","http://www.concrete5.org/download_file/-/view/73241/");
-define("VERSION","Ver.5.7.2.1");
-define("FILENAME","./concrete5.5.7.2.1.zip");
-define("DIRNAME","./concrete5.7.2.1");
+define("SRC_URL","http://www.concrete5.org/download_file/-/view/74252/");
+define("VERSION","Ver.5.7.3");
+define("FILENAME","./concrete5.5.7.3.zip");
+define("DIRNAME","./concrete5.7.3");
 
 if(isset($_GET["step"])){
     switch($_GET["step"]){
@@ -29,13 +29,20 @@ if(isset($_GET["step"])){
             }
             break;
         case 2:
-            //FIXME
     		if (function_exists('zip_open')) {
     			try {
     				$zip = new ZipArchive;
     				if ($zip->open(FILENAME) === TRUE) {
     					$zip->extractTo("./");
-    					$zip->close();	
+    					$zip->close();
+    					if($dp = opendir("./".DIRNAME)){
+        					while (($file = readdir($dp)) !== false) {
+                                if ($file != "." && $file != "..") {
+                                    rename("./".DIRNAME."/".$file, "./".$file);
+                                }
+                            }
+                            closedir($dp);
+    					}
     					echo json_encode(1);
     				}			
     			} catch(Exception $e) {
