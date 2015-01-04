@@ -12,4 +12,4 @@ zipの展開、ファイルの移動など、面倒くさいところはexec()�
 * heteml
 * CPI
 * さくらのレンタルサーバ スタンダード
- 
+* Windows Azure Website 
