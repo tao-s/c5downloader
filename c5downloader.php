@@ -16,15 +16,33 @@ if(isset($_GET["step"])){
         case 1:
             $rfp = fopen(SRC_URL, "r");
             $lfp = fopen(FILENAME,"cb");
-            while($line = fgets($rfp)){
-                fwrite($lfp, $line);
+            if(!$rfp || !$lfp){
+                echo json_encode(0);
+                exit;
+            }else{
+                while($line = fgets($rfp)){
+                    fwrite($lfp, $line);
+                }
+                fclose($rfp);
+                fclose($lfp);
+                echo json_encode(1);
             }
-            fclose($rfp);
-            fclose($lfp);
-            echo json_encode(1);
             break;
         case 2:
             //FIXME
+    		if (function_exists('zip_open')) {
+    			try {
+    				$zip = new ZipArchive;
+    				if ($zip->open(FILENAME) === TRUE) {
+    					$zip->extractTo("./");
+    					$zip->close();	
+    					echo json_encode(1);
+    				}			
+    			} catch(Exception $e) {
+    			    echo json_encode(0);
+    			}
+    			exit;
+     		} 
             exec("unzip ".FILENAME);
             exec("mv ./".DIRNAME."/* ./");
             exec("rm -Rf ./".DIRNAME);
