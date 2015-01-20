@@ -3,10 +3,10 @@
  * concrete5 CMS simple downloader
  * Copyright 2014 XROSS CUBE, Inc.
  * 
- * This program is free to re-distribte as long as you keep
- * the copyright notice.
+ * This script is free to re-distribute as long as you keep
+ * this copyright notice.
  *
- * Personal use it permitted.
+ * Personal use is permitted.
  *
  * However the copyrighter holds no responsibility against
  * any damages caused by using this script
