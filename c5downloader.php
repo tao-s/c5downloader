@@ -1,15 +1,22 @@
 <?php
 /*
  * concrete5 CMS simple downloader
- * copyright 2014 XROSS CUBE, Inc.
+ * Copyright 2014 XROSS CUBE, Inc.
  * 
+ * This program is free to re-distribte as long as you keep
+ * the copyright notice.
+ *
+ * Personal use it permitted.
+ *
+ * However the copyrighter holds no responsibility against
+ * any damages caused by using this script
  * コピーライト以外の改変、再配布OK。個人利用の範囲で勝手に使ってOKです。
  * その代わり当方では一切責任を負いません。
  */
-define("SRC_URL","http://www.concrete5.org/download_file/-/view/74252/");
-define("VERSION","Ver.5.7.3");
-define("FILENAME","./concrete5.5.7.3.zip");
-define("DIRNAME","./concrete5.7.3");
+define("SRC_URL","http://www.concrete5.org/download_file/-/view/74619/");
+define("VERSION","Ver.5.7.3.1");
+define("FILENAME","./concrete5.5.7.3.1.zip");
+define("DIRNAME","./concrete5.7.3.1");
 
 $messages = array(
     "ja" => array(
@@ -25,7 +32,7 @@ $messages = array(
         "This program will download & deploy concrete5 ".VERSION." in this directory.",
         "START",
         "Downloading...",
-        "Deployment...",
+        "Deploying...",
         "Done!",
         "Oops! Sorry, I couldn't complete the process.",
         "Jump to the install page. \n- Please remove this file -"
