@@ -1,8 +1,15 @@
 <?php
 /*
  * concrete5 CMS simple downloader
- * copyright 2014 XROSS CUBE, Inc.
+ * Copyright 2014 XROSS CUBE, Inc.
  * 
+ * This script is free to re-distribute as long as you keep
+ * this copyright notice.
+ *
+ * Personal use is permitted.
+ *
+ * However the copyrighter holds no responsibility against
+ * any damages caused by using this script
  * コピーライト以外の改変、再配布OK。個人利用の範囲で勝手に使ってOKです。
  * その代わり当方では一切責任を負いません。
  */
@@ -25,7 +32,7 @@ $messages = array(
         "This program will download & deploy concrete5 ".VERSION." in this directory.",
         "START",
         "Downloading...",
-        "Deployment...",
+        "Deploying...",
         "Done!",
         "Oops! Sorry, I couldn't complete the process.",
         "Jump to the install page. \n- Please remove this file -"
