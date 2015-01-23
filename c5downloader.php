@@ -26,7 +26,7 @@ $messages = array(
         "このディレクトリに圧縮ファイルを展開中です。",
         "ダウンロード、展開しました。",
         "ダウンロード、展開に失敗しました。",
-        "インストール画面にジャンプします。\nこのファイルは必ず削除してください。"
+        'インストール画面にジャンプします。\nこのファイルは必ず削除してください。'
     ),
     "en" => array(
         "This program will download & deploy concrete5 ".VERSION." in this directory.",
@@ -35,7 +35,7 @@ $messages = array(
         "Deploying...",
         "Done!",
         "Oops! Sorry, I couldn't complete the process.",
-        "Jump to the install page. \n- Please remove this file -"
+        'Jump to the install page. \n- Please remove this file -'
     )
     //Add translated messages if you want to print your language messages.
 );
