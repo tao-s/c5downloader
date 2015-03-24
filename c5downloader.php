@@ -104,6 +104,7 @@ if(isset($_GET["step"])){
 ?><!DOCUTYPE html>
 <html>
 <head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 <title>concrete5 <?php echo VERSION; ?> Downloader</title>
 <style>
 body{
