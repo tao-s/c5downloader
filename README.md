@@ -1,4 +1,4 @@
-# c5downloader
+# concrete5 CMS Simple Downloader
 
 concrete5 One-file downloader
 
@@ -15,4 +15,4 @@ Then, access the PHP script.
 * heteml
 * CPI
 * さくらのレンタルサーバ スタンダード
-* Windows Azure Website 
+* Windows Azure Website
