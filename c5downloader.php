@@ -2,7 +2,7 @@
 /*
  * concrete5 CMS simple downloader
  * Copyright 2014 XROSS CUBE, Inc.
- * 
+ *
  * This script is free to re-distribute as long as you keep
  * this copyright notice.
  *
@@ -13,10 +13,10 @@
  * コピーライト以外の改変、再配布OK。個人利用の範囲で勝手に使ってOKです。
  * その代わり当方では一切責任を負いません。
  */
-define("SRC_URL","http://www.concrete5.org/download_file/-/view/74619/");
-define("VERSION","Ver.5.7.3.1");
-define("FILENAME","./concrete5.5.7.3.1.zip");
-define("DIRNAME","./concrete5.7.3.1");
+define("SRC_URL","http://www.concrete5.org/download_file/-/view/79252/");
+define("VERSION","Ver.5.7.4.2");
+define("FILENAME","./concrete5.7.4.2.zip");
+define("DIRNAME","./concrete5.7.4.2");
 
 $messages = array(
     "ja" => array(
@@ -84,16 +84,16 @@ if(isset($_GET["step"])){
                             closedir($dp);
     					}
     					echo json_encode(1);
-    				}			
+    				}
     			} catch(Exception $e) {
     			    echo json_encode(0);
     			}
     			exit;
-     		} 
+     		}
             exec("unzip ".FILENAME);
             exec("mv ./".DIRNAME."/* ./");
             exec("rm -Rf ./".DIRNAME);
-                  
+
             echo json_encode(1);
             break;
         default:
@@ -177,7 +177,7 @@ jQuery(function(){
     $(".start").click(function(){
         $(this).css("opacity",0);
         sendRequest(1);
-        return false;   
+        return false;
     });
 });
 function sendRequest(stepNum){
