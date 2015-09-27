@@ -16,3 +16,4 @@ Then, access the PHP script.
 * CPI
 * さくらのレンタルサーバ スタンダード
 * Windows Azure Website
+* First Server Zenlogick
