@@ -83,6 +83,9 @@ if(isset($_GET["step"])){
                             }
                             closedir($dp);
     					}
+                        exec("rm -rf ./".DIRNAME);
+                        exec("rm ./".FILENAME);
+                        unlink(__FILE__);
     					echo json_encode(1);
     				}
     			} catch(Exception $e) {
@@ -92,8 +95,9 @@ if(isset($_GET["step"])){
      		}
             exec("unzip ".FILENAME);
             exec("mv ./".DIRNAME."/* ./");
-            exec("rm -Rf ./".DIRNAME);
-
+            exec("rm -rf ./".DIRNAME);
+            exec("rm ./".FILENAME);
+            unlink(__FILE__);
             echo json_encode(1);
             break;
         default:
@@ -209,9 +213,7 @@ function sendRequest(stepNum){
         });
 }
 function gotoInstallPage(){
-    if(!alert("<?php echo $messages[$lang][6]; ?>")){
         location.href="./index.php";
-    }
 }
 </script>
 </body>
