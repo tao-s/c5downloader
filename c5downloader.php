@@ -13,7 +13,7 @@
  * コピーライト以外の改変、再配布OK。個人利用の範囲で勝手に使ってOKです。
  * その代わり当方では一切責任を負いません。
  */
-define("SRC_URL","http://www.concrete5.org/download_file/-/view/88522/");
+define("SRC_URL","http://concrete5-japan.org/index.php/download_file/view/2080/45/");
 define("VERSION","Ver.5.7.5.7");
 define("FILENAME","./concrete5.7.5.7.zip");
 define("DIRNAME","./concrete5.7.5.7");
