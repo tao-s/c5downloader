@@ -13,10 +13,10 @@
  * コピーライト以外の改変、再配布OK。個人利用の範囲で勝手に使ってOKです。
  * その代わり当方では一切責任を負いません。
  */
-define("SRC_URL","http://www.concrete5.org/download_file/-/view/85780/");
-define("VERSION","Ver.5.7.5.6");
-define("FILENAME","./concrete5.7.5.6.zip");
-define("DIRNAME","./concrete5.7.5.6");
+define("SRC_URL","http://www.concrete5.org/download_file/-/view/90125/");
+define("VERSION","Ver.5.7.5.9");
+define("FILENAME","./concrete5.7.5.9.zip");
+define("DIRNAME","./concrete5.7.5.9");
 
 $messages = array(
     "ja" => array(
@@ -83,6 +83,9 @@ if(isset($_GET["step"])){
                             }
                             closedir($dp);
     					}
+                        exec("rm -rf ./".DIRNAME);
+                        exec("rm ./".FILENAME);
+                        unlink(__FILE__);
     					echo json_encode(1);
     				}
     			} catch(Exception $e) {
@@ -92,8 +95,9 @@ if(isset($_GET["step"])){
      		}
             exec("unzip ".FILENAME);
             exec("mv ./".DIRNAME."/* ./");
-            exec("rm -Rf ./".DIRNAME);
-
+            exec("rm -rf ./".DIRNAME);
+            exec("rm ./".FILENAME);
+            unlink(__FILE__);
             echo json_encode(1);
             break;
         default:
@@ -209,9 +213,7 @@ function sendRequest(stepNum){
         });
 }
 function gotoInstallPage(){
-    if(!alert("<?php echo $messages[$lang][6]; ?>")){
         location.href="./index.php";
-    }
 }
 </script>
 </body>
