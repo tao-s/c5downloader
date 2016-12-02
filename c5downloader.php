@@ -13,8 +13,8 @@
  * コピーライト以外の改変、再配布OK。個人利用の範囲で勝手に使ってOKです。
  * その代わり当方では一切責任を負いません。
  */
-define("SRC_URL","http://www.concrete5.org/download_file/-/view/92663/");
-define("VERSION","Ver. 8.0.0");
+define("SRC_URL","https://www.concrete5.org/download_file/-/view/92663/");
+define("VERSION","Ver.8.0");
 define("FILENAME","./concrete5-8.0.0.zip");
 define("DIRNAME","./concrete5-8.0.0");
 
@@ -83,9 +83,6 @@ if(isset($_GET["step"])){
                             }
                             closedir($dp);
     					}
-                        exec("rm -rf ./".DIRNAME);
-                        exec("rm ./".FILENAME);
-                        unlink(__FILE__);
     					echo json_encode(1);
     				}
     			} catch(Exception $e) {
@@ -95,9 +92,8 @@ if(isset($_GET["step"])){
      		}
             exec("unzip ".FILENAME);
             exec("mv ./".DIRNAME."/* ./");
-            exec("rm -rf ./".DIRNAME);
-            exec("rm ./".FILENAME);
-            unlink(__FILE__);
+            exec("rm -Rf ./".DIRNAME);
+
             echo json_encode(1);
             break;
         default:
@@ -213,7 +209,9 @@ function sendRequest(stepNum){
         });
 }
 function gotoInstallPage(){
+    if(!alert("<?php echo $messages[$lang][6]; ?>")){
         location.href="./index.php";
+    }
 }
 </script>
 </body>
