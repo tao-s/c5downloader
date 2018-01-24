@@ -16,7 +16,7 @@
 define("SRC_URL","http://www.concrete5.org/download_file/-/view/99963/");
 define("VERSION","Ver. 8.3.1");
 define("FILENAME","./concrete5-8.3.1.zip");
-define("DIRNAME","./concrete5-8.3.0");
+define("DIRNAME","./concrete5-8.3.1");
 
 $messages = array(
     "ja" => array(
