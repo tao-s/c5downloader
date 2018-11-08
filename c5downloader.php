@@ -13,16 +13,16 @@
  * コピーライト以外の改変、再配布OK。個人利用の範囲で勝手に使ってOKです。
  * その代わり当方では一切責任を負いません。
  */
-define("SRC_URL","https://www.concrete5.org/download_file/-/view/106698/");
-define("VERSION","Ver. 8.4.3");
-define("FILENAME","./concrete5-8.4.3.zip");
-define("DIRNAME","./concrete5-8.4.3");
+define("SRC_URL","http://downloads.ec-cube.net/src/eccube-4.0.0.zip");
+define("VERSION","Ver. 4.0.0");
+define("FILENAME","./eccube-4.0.0.zip");
+define("DIRNAME","./eccube-4.0.0");
 
 $messages = array(
     "ja" => array(
-        "このディレクトリにconcrete5 ".VERSION." をダウンロードし展開します。",
+        "このディレクトリにEC-CUBE ".VERSION." をダウンロードし展開します。",
         "ダウンロード開始",
-        "このディレクトリにconcrete5の圧縮ファイルをダウンロード中です。",
+        "このディレクトリにEC-CUBEの圧縮ファイルをダウンロード中です。",
         "このディレクトリに圧縮ファイルを展開中です。",
         "ダウンロード、展開しました。",
         "ダウンロード、展開に失敗しました。",
@@ -164,7 +164,7 @@ a{
 </head>
 <body>
 <div class="main">
-<div class="center" style="padding-top:10%;"><a href="http://concrete5.org/" target="_blank"><img src="http://www.concrete5.org/download_file/-/view/47445/12593/" alt="concrete5" /></a></div>
+<div class="center" style="padding-top:10%;"><a href="https://www.ec-cube.net/" target="_blank">EC-CUBE</a></div>
 <h1 class="center">concrete5 <?php echo VERSION; ?> Downloader</h1>
 <p class="center"><?php echo $messages[$lang][0]; ?></p>
 <p style="line-height:3em;" class="center"><a href="#" class="btn start"><?php echo $messages[$lang][1]; ?></a></p>
