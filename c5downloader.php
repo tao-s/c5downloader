@@ -13,14 +13,14 @@
  * コピーライト以外の改変、再配布OK。個人利用の範囲で勝手に使ってOKです。
  * その代わり当方では一切責任を負いません。
  */
-define("SRC_URL","https://www.concrete5.org/download_file/-/view/106698/");
-define("VERSION","Ver. 8.4.3");
-define("FILENAME","./concrete5-8.4.3.zip");
-define("DIRNAME","./concrete5-8.4.3");
+define("SRC_URL","https://www.concrete5.org/download_file/-/view/108181/");
+define("VERSION","8.4.4");
+define("FILENAME","./concrete5-".VERSION.".zip");
+define("DIRNAME","./concrete5-".VERSION);
 
 $messages = array(
     "ja" => array(
-        "このディレクトリにconcrete5 ".VERSION." をダウンロードし展開します。",
+        "このディレクトリにconcrete5 Ver. ".VERSION." をダウンロードし展開します。",
         "ダウンロード開始",
         "このディレクトリにconcrete5の圧縮ファイルをダウンロード中です。",
         "このディレクトリに圧縮ファイルを展開中です。",
@@ -29,7 +29,7 @@ $messages = array(
         'インストール画面にジャンプします。\nこのファイルは必ず削除してください。'
     ),
     "en" => array(
-        "This program will download & deploy concrete5 ".VERSION." in this directory.",
+        "This program will download & deploy concrete5 Ver. ".VERSION." in this directory.",
         "START",
         "Downloading...",
         "Deploying...",
@@ -109,7 +109,7 @@ if(isset($_GET["step"])){
 <html>
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-<title>concrete5 <?php echo VERSION; ?> Downloader</title>
+<title>concrete5 Ver. <?php echo VERSION; ?> Downloader</title>
 <style>
 body{
     background: #EEE;
@@ -165,7 +165,7 @@ a{
 <body>
 <div class="main">
 <div class="center" style="padding-top:10%;"><a href="http://concrete5.org/" target="_blank"><img src="http://www.concrete5.org/download_file/-/view/47445/12593/" alt="concrete5" /></a></div>
-<h1 class="center">concrete5 <?php echo VERSION; ?> Downloader</h1>
+<h1 class="center">concrete5 Ver. <?php echo VERSION; ?> Downloader</h1>
 <p class="center"><?php echo $messages[$lang][0]; ?></p>
 <p style="line-height:3em;" class="center"><a href="#" class="btn start"><?php echo $messages[$lang][1]; ?></a></p>
 <p class="step step1 center"><?php echo $messages[$lang][2]; ?></p>
