@@ -13,8 +13,8 @@
  * コピーライト以外の改変、再配布OK。個人利用の範囲で勝手に使ってOKです。
  * その代わり当方では一切責任を負いません。
  */
-define("SRC_URL","https://www.concrete5.org/download_file/-/view/108181/");
-define("VERSION","8.4.4");
+define("SRC_URL","https://www.concrete5.org/download_file/-/view/109615/");
+define("VERSION","8.5.1");
 define("FILENAME","./concrete5-".VERSION.".zip");
 define("DIRNAME","./concrete5-".VERSION);
 
