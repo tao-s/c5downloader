@@ -1,6 +1,7 @@
 # concrete5 CMS Simple Downloader
-
 *concrete5 One-file downloader*
+
+![](screen.gif)
 
 Download and deploy the latest version of concrete5.
 
