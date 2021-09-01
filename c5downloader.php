@@ -1,7 +1,7 @@
 <?php
 /*
  * concrete5 CMS simple downloader
- * Copyright 2014 XROSS CUBE, Inc.
+ * Copyright 2021 XROSS CUBE, Inc.
  *
  * This script is free to re-distribute as long as you keep
  * this copyright notice.
@@ -13,14 +13,14 @@
  * コピーライト以外の改変、再配布OK。個人利用の範囲で勝手に使ってOKです。
  * その代わり当方では一切責任を負いません。
  */
-define("SRC_URL","https://www.concrete5.org/download_file/-/view/115589/");
-define("VERSION","8.5.5");
-define("FILENAME","./concrete5-".VERSION.".zip");
-define("DIRNAME","./concrete5-".VERSION);
+define("SRC_URL","https://www.concretecms.com/download_file/8c1f8bf8-6e0f-4730-bfb6-649c8213f283");
+define("VERSION","9.0.0RC3");
+define("FILENAME","./concrete-cms-".VERSION.".zip");
+define("DIRNAME","./concrete-cms-".VERSION);
 
 $messages = array(
     "ja" => array(
-        "このディレクトリにconcrete5 Ver. ".VERSION." をダウンロードし展開します。",
+        "このディレクトリにconcreteCMS Ver. ".VERSION." をダウンロードし展開します。",
         "ダウンロード開始",
         "このディレクトリにconcrete5の圧縮ファイルをダウンロード中です。",
         "このディレクトリに圧縮ファイルを展開中です。",
@@ -29,7 +29,7 @@ $messages = array(
         'インストール画面にジャンプします。\nこのファイルは必ず削除してください。'
     ),
     "en" => array(
-        "This program will download & deploy concrete5 Ver. ".VERSION." in this directory.",
+        "This program will download & deploy concreteCMS Ver. ".VERSION." in this directory.",
         "START",
         "Downloading...",
         "Deploying...",
@@ -164,8 +164,8 @@ a{
 </head>
 <body>
 <div class="main">
-<div class="center" style="padding-top:10%;"><a href="http://concrete5.org/" target="_blank"><img src="http://www.concrete5.org/download_file/-/view/47445/12593/" alt="concrete5" /></a></div>
-<h1 class="center">concrete5 Ver. <?php echo VERSION; ?> Downloader</h1>
+<div class="center" style="padding-top:10%;"><a href="http://concretecms.org/" target="_blank"><img src="https://www.concretecms.com/download_file/1751c8a1-144a-47bd-956a-4236361d02ff/2626" alt="concreteCMS" /></a></div>
+<h1 class="center">Concrete CMS® Ver. <?php echo VERSION; ?> Downloader</h1>
 <p class="center"><?php echo $messages[$lang][0]; ?></p>
 <p style="line-height:3em;" class="center"><a href="#" class="btn start"><?php echo $messages[$lang][1]; ?></a></p>
 <p class="step step1 center"><?php echo $messages[$lang][2]; ?></p>

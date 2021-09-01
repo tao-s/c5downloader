@@ -1,15 +1,20 @@
-# concrete5 CMS Simple Downloader
+# Concrete CMS® Simple Downloader
 
-concrete5 One-file downloader
+**Concrete CMS® One-file downloader**
 
-concrete5の最新版をダウンロード、展開するスクリプトです。
+**Concrete CMS®**（concrete5）の最新版をダウンロード、展開するスクリプトです。
 
-concrete5をインストールしたいディレクトリにc5downloader.phpをアップロードし、ブラウザでアクセスしてください。
-masterブランチはVer.8用です。5.7対応版を使いたい方は、[5.7ブランチ](https://github.com/tao-s/c5downloader/tree/5.7)を使ってください。
+## 使い方
+Concrete CMS®をインストールしたいディレクトリにc5downloader.phpをアップロードし、ブラウザでアクセスしてください。
 
-Download and deploy the latest version of concrete5.
+このブランチはVer.9.0.x用です。8系版を使いたい方は、[masterブランチ](https://github.com/tao-s/c5downloader/tree/master)を使ってください。
+
+Download and deploy Concrete CMS® Ver. 9.0.0RC3.
+Plesae use [master branch](https://github.com/tao-s/c5downloader/tree/master) if you want to use Ver. 8.5.x.
+
+## How to use
 Upload "c5downloader.php" to install directory in the web server.
-Then, access the PHP script.
+Then, access the PHP script on your browser.
 
 ## 使えたレンタルサーバ
 
