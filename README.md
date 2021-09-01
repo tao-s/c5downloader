@@ -1,26 +1,22 @@
 # Concrete CMS® Simple Downloader
+*Concrete CMS® One-file downloader*
 
-**Concrete CMS® One-file downloader**
-
-**Concrete CMS®**（concrete5）の最新版をダウンロード、展開するスクリプトです。
-
-## 使い方
-Concrete CMS®をインストールしたいディレクトリにc5downloader.phpをアップロードし、ブラウザでアクセスしてください。
-
-このブランチはVer.9.0.x用です。8系版を使いたい方は、[masterブランチ](https://github.com/tao-s/c5downloader/tree/master)を使ってください。
+![](screen.gif)
 
 Download and deploy Concrete CMS® Ver. 9.0.0RC3.
+
 Plesae use [master branch](https://github.com/tao-s/c5downloader/tree/master) if you want to use Ver. 8.5.x.
 
 ## How to use
-Upload "c5downloader.php" to install directory in the web server.
-Then, access the PHP script on your browser.
+- Upload "c5downloader.php" to install directory in the web server.
+- Access uploaded script on your browser.<br>
+ ex.
+ https://example.com/c5downloader.php
 
-## 使えたレンタルサーバ
+## Where can I use this?
+We confirmed executable this script at hosting service below list,
 
-* ロリポップ
-* heteml
-* CPI
-* さくらのレンタルサーバ スタンダード
-* Windows Azure Website
-* First Server Zenlogick
+* [Windows Azure Website](https://azure.microsoft.com/en-us/services/app-service/web/)
+* Zenlogick
+
+*Please send PR if you know where can use this script*

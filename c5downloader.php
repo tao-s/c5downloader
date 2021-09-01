@@ -13,6 +13,7 @@
  * コピーライト以外の改変、再配布OK。個人利用の範囲で勝手に使ってOKです。
  * その代わり当方では一切責任を負いません。
  */
+
 define("SRC_URL","https://www.concretecms.com/download_file/8c1f8bf8-6e0f-4730-bfb6-649c8213f283");
 define("VERSION","9.0.0RC3");
 define("FILENAME","./concrete-cms-".VERSION.".zip");
