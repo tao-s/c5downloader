@@ -13,7 +13,7 @@
  * コピーライト以外の改変、再配布OK。個人利用の範囲で勝手に使ってOKです。
  * その代わり当方では一切責任を負いません。
  */
-define("SRC_URL","https://marketplace.concretecms.com/download_file/-/view/115589/");
+define("SRC_URL","https://www.concretecms.org/download_file/3abec4a4-1a45-489c-9fe7-bb3f100dea99");
 define("VERSION","8.5.5");
 define("FILENAME","./concrete5-".VERSION.".zip");
 define("DIRNAME","./concrete5-".VERSION);
@@ -164,8 +164,8 @@ a{
 </head>
 <body>
 <div class="main">
-<div class="center" style="padding-top:10%;"><a href="http://concrete5.org/" target="_blank"><img src="http://www.concrete5.org/download_file/-/view/47445/12593/" alt="concrete5" /></a></div>
-<h1 class="center">concrete5 Ver. <?php echo VERSION; ?> Downloader</h1>
+<div class="center" style="padding-top:10%;"><a href="https://www.concretecms.org/" target="_blank"><img src="https://www.concretecms.com/application/files/8416/2551/4843/2021-07-05_19-54_398.png" alt="Concrete CMS" /></a></div>
+<h1 class="center">Concrete CMS Ver. <?php echo VERSION; ?> Downloader</h1>
 <p class="center"><?php echo $messages[$lang][0]; ?></p>
 <p style="line-height:3em;" class="center"><a href="#" class="btn start"><?php echo $messages[$lang][1]; ?></a></p>
 <p class="step step1 center"><?php echo $messages[$lang][2]; ?></p>
