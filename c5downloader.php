@@ -13,8 +13,8 @@
  * コピーライト以外の改変、再配布OK。個人利用の範囲で勝手に使ってOKです。
  * その代わり当方では一切責任を負いません。
  */
-define("SRC_URL","https://www.concretecms.org/download_file/3abec4a4-1a45-489c-9fe7-bb3f100dea99");
-define("VERSION","8.5.5");
+define("SRC_URL","https://www.concretecms.com/download_file/61dab82f-fb01-47bc-8cf1-deffff890224/9");
+define("VERSION","8.5.6");
 define("FILENAME","./concrete5-".VERSION.".zip");
 define("DIRNAME","./concrete5-".VERSION);
 
